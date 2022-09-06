@@ -92,6 +92,13 @@ function game() {
         console.log();
         console.log('------------------------');
         console.log();
+
+        if (i === 5) {
+            console.log('Game Over');
+            if (playerScore > computerScore) {
+                console.log('You win!');
+            } else console.log('You lose');
+        }
     }
 }
 
