@@ -6,8 +6,7 @@ const choices = ['ROCK', 'PAPER', 'SCISSORS'];
 function getComputerChoice() {
     return choices[Math.floor(Math.random() * choices.length)];
 }
-// Set random computer choice function to var to access via variable
-const computerSelection = getComputerChoice();
+
 
 // Get player selection function
 function getPlayerChoice() {
@@ -68,8 +67,11 @@ function game() {
     // Loop 5 times
     for (let i = 1; i <= 5; i++) {
 
+        // Set random computer choice function to var to access via variable to call/run each time in loop
+        const computerSelection = getComputerChoice();
+
         // Bring in User and Computer choices
-        getComputerChoice(); // Not random, needs fix
+        getComputerChoice();
         getPlayerChoice();
 
         // Display choices
