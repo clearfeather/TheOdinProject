@@ -70,7 +70,20 @@ const computerCurrentScore = document.querySelector('#computerCurrentScore');
 
 // Add Event Listeners for buttons
 
+let rock = document.getElementById('rock');
+rock.addEventListener('click', () => {
+    playerSelection = 'ROCK';
+});
 
+let paper = document.getElementById('paper');
+paper.addEventListener('click', () => {
+    playerSelection = 'PAPER';
+});
+
+let scissors = document.getElementById('scissors');
+scissors.addEventListener('click', () => {
+    playerSelection = 'SCISSORS';
+});
 
 
 // Create game
