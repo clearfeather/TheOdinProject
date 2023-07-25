@@ -11,8 +11,31 @@
 
 <body>
     <div class="flex-container">
-        <h1>RPS</h1>
+        <h1>Rock Paper Scissors</h1>
+        <div class="game">Game Controls:
+            <button id="start">Start</button>
+            <button id="reset">Reset</button>
+        </div>
+        <br>
+        <div id="choices">Choose: 
+            <button id="rock">Rock</button>
+            <button id="paper">Paper</button>
+            <button id="scissors">Scissors</button>
+        </div>
+        <br>
+        <div id="chose">
+            Player chose: <span id="playerChoice">Waiting..</span>
+            <br>
+        Computer chose: <span id="computerChoice">Waiting..</span>
+        </div>
     </div>
+    <br>
+    <div id="results">
+        <h3>Results:</h3>
+        <p>Player: <span id="playerCurrentScore">0</span></p>
+        <p>Computer: <span id="computerCurrentScore">0</span></p>
+    </div>
+
     <script src="index.js"></script>
 </body>
 
